@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_image_view"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/test" />
+
+    <TextView
+        android:id="@+id/username_timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/avatar_image_view"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="username"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/user_region_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/avatar_image_view"
+        android:layout_below="@id/username_timeline"
+        android:layout_marginLeft="12dp"
+        android:text="Location" />
+
+    <ImageView
+        android:id="@+id/preview_avatar_image"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_below="@id/avatar_image_view"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preview_avatar_image"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/like" />
+
+    <ImageView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preview_avatar_image"
+        android:layout_toRightOf="@id/like"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/comment" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preview_avatar_image"
+        android:layout_toRightOf="@id/comment"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/share" />
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/like"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="0 likes" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/likes"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/preview_comments_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:text="0 Comments" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_user_comment"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/preview_comments_text_view"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/test" />
+
+    <TextView
+        android:id="@+id/edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:layout_below="@id/preview_comments_text_view"
+        android:layout_toRightOf="@id/avatar_user_comment"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/et_bg"
+        android:layout_marginTop="9dp"
+        android:text="Add a comment..." />
+
+    <ImageView
+        android:id="@+id/like_double_click"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/like_doubli_click"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/line2_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/edit_text"
+        android:layout_marginTop="7dp"
+        android:background="#000" />
+
+</RelativeLayout>
